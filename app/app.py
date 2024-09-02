@@ -31,5 +31,14 @@ def disease():
 def fertilizer():
     return render_template('fertilizers.html')
 
+@app.route('/fertilizerResult.html')
+def result():
+    return render_template('fertilizerResult.html')
+
+@app.route('/cropResult.html')
+def cropR():
+    return render_template('cropResult.html')
+
+
 if __name__ == "__main__":
     app.run(debug=True) 
